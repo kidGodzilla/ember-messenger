@@ -1,0 +1,77 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.1.14
+3 info using node@v0.12.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jamesfuthey/ember-cli-messenger',
+7 silly cache add   type: 'directory' }
+8 verbose tar pack [ '/Users/jamesfuthey/.npm/ember-cli-messenger/0.0.0/package.tgz',
+8 verbose tar pack   '/Users/jamesfuthey/ember-cli-messenger' ]
+9 verbose tarball /Users/jamesfuthey/.npm/ember-cli-messenger/0.0.0/package.tgz
+10 verbose folder /Users/jamesfuthey/ember-cli-messenger
+11 info prepublish ember-cli-messenger@0.0.0
+12 verbose addLocalTarball adding from inside cache /Users/jamesfuthey/.npm/ember-cli-messenger/0.0.0/package.tgz
+13 silly cache afterAdd ember-cli-messenger@0.0.0
+14 verbose afterAdd /Users/jamesfuthey/.npm/ember-cli-messenger/0.0.0/package/package.json not in flight; writing
+15 verbose afterAdd /Users/jamesfuthey/.npm/ember-cli-messenger/0.0.0/package/package.json written
+16 silly publish { name: 'ember-cli-messenger',
+16 silly publish   version: '0.0.0',
+16 silly publish   description: 'Small description for ember-cli-messenger goes here',
+16 silly publish   private: true,
+16 silly publish   directories: { doc: 'doc', test: 'tests' },
+16 silly publish   scripts:
+16 silly publish    { start: 'ember server',
+16 silly publish      build: 'ember build',
+16 silly publish      test: 'ember test' },
+16 silly publish   repository: '',
+16 silly publish   engines: { node: '>= 0.10.0' },
+16 silly publish   author: '',
+16 silly publish   license: 'MIT',
+16 silly publish   devDependencies:
+16 silly publish    { 'broccoli-asset-rev': '^2.0.2',
+16 silly publish      'ember-cli': '0.2.3',
+16 silly publish      'ember-cli-app-version': '0.3.3',
+16 silly publish      'ember-cli-babel': '^5.0.0',
+16 silly publish      'ember-cli-content-security-policy': '0.4.0',
+16 silly publish      'ember-cli-dependency-checker': '0.0.8',
+16 silly publish      'ember-cli-htmlbars': '0.7.4',
+16 silly publish      'ember-cli-ic-ajax': '0.1.1',
+16 silly publish      'ember-cli-inject-live-reload': '^1.3.0',
+16 silly publish      'ember-cli-qunit': '0.3.10',
+16 silly publish      'ember-cli-uglify': '1.0.1',
+16 silly publish      'ember-data': '1.0.0-beta.16.1',
+16 silly publish      'ember-export-application-global': '^1.0.2' },
+16 silly publish   readme: '# Ember-cli-messenger\n\nThis README outlines the details of collaborating on this Ember application.\nA short introduction of this app could easily go here.\n\n## Prerequisites\n\nYou will need the following things properly installed on your computer.\n\n* [Git](http://git-scm.com/)\n* [Node.js](http://nodejs.org/) (with NPM)\n* [Bower](http://bower.io/)\n* [Ember CLI](http://www.ember-cli.com/)\n* [PhantomJS](http://phantomjs.org/)\n\n## Installation\n\n* `git clone <repository-url>` this repository\n* change into the new directory\n* `npm install`\n* `bower install`\n\n## Running / Development\n\n* `ember server`\n* Visit your app at [http://localhost:4200](http://localhost:4200).\n\n### Code Generators\n\nMake use of the many generators for code, try `ember help generate` for more details\n\n### Running Tests\n\n* `ember test`\n* `ember test --server`\n\n### Building\n\n* `ember build` (development)\n* `ember build --environment production` (production)\n\n### Deploying\n\nSpecify what it takes to deploy your app.\n\n## Further Reading / Useful Links\n\n* [ember.js](http://emberjs.com/)\n* [ember-cli](http://www.ember-cli.com/)\n* Development Browser Extensions\n  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)\n  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)\n\n',
+16 silly publish   readmeFilename: 'README.md',
+16 silly publish   gitHead: 'e80fad27fd1840e3ca24b921fde889b1a4715176',
+16 silly publish   _id: 'ember-cli-messenger@0.0.0',
+16 silly publish   _shasum: '1c04c35ed4a431bd19826db0ed88fc3a0e00acf4',
+16 silly publish   _from: '.' }
+17 verbose stack Error: This package has been marked as private
+17 verbose stack Remove the 'private' field from the package.json to publish it.
+17 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:98:5)
+17 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+17 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+17 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+17 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+17 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:64:5
+17 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+17 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+17 verbose stack     at /usr/local/lib/node_modules/npm/lib/cache.js:349:14
+17 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/write-file-atomic/index.js:29:15
+18 verbose cwd /Users/jamesfuthey/ember-cli-messenger
+19 error Darwin 14.3.0
+20 error argv "node" "/usr/local/bin/npm" "publish"
+21 error node v0.12.2
+22 error npm  v2.1.14
+23 error This package has been marked as private
+23 error Remove the 'private' field from the package.json to publish it.
+24 error If you need help, you may report this error at:
+24 error     <http://github.com/npm/npm/issues>
+25 verbose exit [ 1, true ]
