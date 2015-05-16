@@ -55,13 +55,21 @@ Example:
 
 See http://github.hubspot.com/messenger/#messenger-object
 
-#### this.Messenger.post([object])
+#### this.Messenger.post([object or string])
 
 Creates a new Messenger message.
 
 Example: 
 
     this.Messenger.post("I am a happy little duckling.");
+    
+Advanced Example: 
+
+    this.Messenger.post({
+        message: 'ERROR: There was an explosion while processing your quack.',
+        type: 'error',
+        showCloseButton: true
+    });
 
 See http://github.hubspot.com/messenger/#messenger-object
 
