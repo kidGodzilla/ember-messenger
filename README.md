@@ -6,6 +6,10 @@ Ember-messenger is an ember-cli addon for Hubspot Messenger that allows you to e
 
 Messenger is a simple way to display stylish transactional messages in your app.
 
+## Demo
+
+http://ember-messenger.divshot.io/
+
 ## Installation
 
 If you are running ember-cli >= 0.2.3, From within your application you can run:
@@ -28,7 +32,44 @@ ember install:addon ember-messenger
 * `npm install`
 * `bower install`
 
-## Running
+## Usage
+
+The ember-messenger addon adds hubspot messenger via bower, then injects a service into all of your routes and controllers.
+
+After installing, you can access any of the following methods from inside your application's routes and controllers:
+
+### this.Messenger.setup()
+
+Changes or initializes Messenger settings. Optional.
+
+Example:
+
+    this.Messenger.setup({
+        extraClasses: 'messenger-fixed messenger-on-top messenger-on-right',
+        theme: 'flat'
+    });
+
+See http://github.hubspot.com/messenger/#messenger-object
+
+### this.Messenger.post
+
+Creates a new Messenger message.
+
+Example: 
+
+    this.Messenger.post("I am a happy little duckling.");
+
+See http://github.hubspot.com/messenger/#messenger-object
+
+### this.Messenger.hideAll()
+
+Hides all Messenger messages currently being displayed.
+
+Example:
+
+    this.Messenger.hideAll();
+
+## Development
 
 * `ember server`
 * Visit your app at http://localhost:4200.
