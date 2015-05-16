@@ -10,6 +10,8 @@ Messenger is a simple way to display stylish transactional messages in your app.
 
 http://ember-messenger.divshot.io/
 
+Source code for this app is located in the `demo-app` directory of this repository.
+
 ## Installation
 
 If you are running ember-cli >= 0.2.3, From within your application you can run:
