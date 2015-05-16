@@ -18,7 +18,7 @@ If you are running ember-cli >= 0.2.3, From within your application you can run:
 ember install ember-messenger
 ```
 
-## ember-cli 0.1.5 - 0.2.2 Installation
+#### ember-cli 0.1.5 - 0.2.2 Installation
 
 If you are running ember-cli 0.1.5 - 0.2.2 , From within your application you can run:
 
@@ -26,7 +26,7 @@ If you are running ember-cli 0.1.5 - 0.2.2 , From within your application you ca
 ember install:addon ember-messenger
 ```
 
-## Installation without ember-cli
+#### Installation without ember-cli
 
 * `git clone` this repository
 * `npm install`
@@ -38,7 +38,7 @@ The ember-messenger addon adds hubspot messenger via bower, then injects a servi
 
 After installing, you can access any of the following methods from inside your application's routes and controllers:
 
-### this.Messenger.setup()
+#### this.Messenger.setup()
 
 Changes or initializes Messenger settings. Optional.
 
@@ -51,7 +51,7 @@ Example:
 
 See http://github.hubspot.com/messenger/#messenger-object
 
-### this.Messenger.post
+#### this.Messenger.post
 
 Creates a new Messenger message.
 
@@ -61,7 +61,7 @@ Example:
 
 See http://github.hubspot.com/messenger/#messenger-object
 
-### this.Messenger.hideAll()
+#### this.Messenger.hideAll()
 
 Hides all Messenger messages currently being displayed.
 
