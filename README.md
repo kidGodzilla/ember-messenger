@@ -8,7 +8,7 @@ Ember-messenger is an ember-cli addon for Hubspot Messenger that allows you to e
 
 ## Demo
 
-http://ember-messenger.divshot.io/
+[http://ember-messenger.divshot.io/](http://ember-messenger.divshot.io/)
 
 Source code for this app is located in the `demo-app` directory of this repository.
 
@@ -53,7 +53,7 @@ Example:
         theme: 'flat'
     });
 
-See http://github.hubspot.com/messenger/#messenger-object
+See [http://github.hubspot.com/messenger/#messenger-object](http://github.hubspot.com/messenger/#messenger-object)
 
 #### this.Messenger.post([object or string])
 
@@ -71,7 +71,7 @@ Advanced Example:
         showCloseButton: true
     });
 
-See http://github.hubspot.com/messenger/#messenger-object
+See [http://github.hubspot.com/messenger/#messenger-object](http://github.hubspot.com/messenger/#messenger-object)
 
 #### this.Messenger.hideAll()
 
@@ -100,4 +100,4 @@ For more information on using ember-cli, visit [http://www.ember-cli.com/](http:
 
 ## More Information
 
-Hubspot Messenger: http://github.hubspot.com/messenger/
+Hubspot Messenger: [http://github.hubspot.com/messenger/](http://github.hubspot.com/messenger/)
