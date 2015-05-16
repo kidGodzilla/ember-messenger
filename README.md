@@ -1,10 +1,10 @@
 # Ember-messenger
 
-Ember-messenger is an ember-cli addon for Hubspot Messenger that allows you to easily add Hubspot Messenger to your Ember App.
+Messenger is a simple way to display stylish transactional messages in your app.
 
 <img src="http://i.imgur.com/qf6weQP.png">
 
-Messenger is a simple way to display stylish transactional messages in your app.
+Ember-messenger is an ember-cli addon for Hubspot Messenger that allows you to easily add Hubspot Messenger to your Ember App.
 
 ## Demo
 
@@ -38,6 +38,8 @@ ember install:addon ember-messenger
 
 The ember-messenger addon adds hubspot messenger via bower, then injects a service into all of your routes and controllers.
 
+ember-messenger exposes several methods on the `Messenger()` object inside `this.Messenger`. You can mostly use the same syntax as you see in the Hubspot documentation, however you do not need the set of parenthesis after `this.Messenger`.
+
 After installing, you can access any of the following methods from inside your application's routes and controllers:
 
 #### this.Messenger.setup()
@@ -53,7 +55,7 @@ Example:
 
 See http://github.hubspot.com/messenger/#messenger-object
 
-#### this.Messenger.post
+#### this.Messenger.post([object])
 
 Creates a new Messenger message.
 
