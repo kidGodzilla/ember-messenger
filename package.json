@@ -1,7 +1,18 @@
 {
   "name": "ember-messenger",
-  "version": "0.0.2",
-  "description": "Use Hubspot Messenger inside your Ember App.",
+  "version": "0.0.9",
+  "description": "Use Hubspot Messenger inside your Ember App for stylish & simple transactional messages.",
+  "keywords": [
+    "ember-addon"
+  ],
+  "author": {
+    "name": "James Futhey"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kidGodzilla/ember-messenger.git"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
