@@ -7,15 +7,20 @@ export default Ember.Service.extend({
       theme: 'air'
     }
   },
+
   setup: function (options) {
-    return Messenger.options = $.extend({}, Messenger.options, options);
+    Messenger.options = Ember.$.extend({}, Messenger.options, options);
+    return options;
   },
+
   post: function (args) {
     Messenger().post(args);
   },
+
   run: function (args) {
     Messenger().run(args);
   },
+
   hideAll: function () {
     Messenger().hideAll();
   }
