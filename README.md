@@ -52,6 +52,22 @@ Example:
         extraClasses: 'messenger-fixed messenger-on-top messenger-on-right',
         theme: 'flat'
     });
+    
+Or from within an instance initializer:
+
+    export function initialize(instance) {
+      const messenger = instance.container.lookup('service:messenger');
+      messenger.setup({
+        extraClasses: 'messenger-fixed messenger-on-top',
+        theme: 'future'
+      });
+    }
+    
+    export default {
+      name: 'setup-messenger',
+      initialize: initialize
+    };
+
 
 See [http://github.hubspot.com/messenger/#messenger-object](http://github.hubspot.com/messenger/#messenger-object)
 
