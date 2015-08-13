@@ -87,6 +87,8 @@ Advanced Example:
         showCloseButton: true
     });
 
+Note that `error()`, `info()`, and `success()` shorthand methods are available on `this.Messenger`, in keeping with
+the underlying Messenger API.
 See [http://github.hubspot.com/messenger/#messenger-object](http://github.hubspot.com/messenger/#messenger-object)
 
 #### this.Messenger.hideAll()

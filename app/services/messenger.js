@@ -1,27 +1,39 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  init: function () {
+  init() {
     Messenger.options = {
       extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-right',
       theme: 'air'
     }
   },
 
-  setup: function (options) {
+  setup(options) {
     Messenger.options = Ember.$.extend({}, Messenger.options, options);
     return options;
   },
 
-  post: function (args) {
+  post(args) {
     Messenger().post(args);
   },
 
-  run: function (args) {
+  error(args) {
+    Messenger().error(args);
+  },
+
+  info(args) {
+    Messenger().info(args);
+  },
+
+  success(args) {
+    Messenger().success(args);
+  },
+
+  run(args) {
     Messenger().run(args);
   },
 
-  hideAll: function () {
+  hideAll() {
     Messenger().hideAll();
   }
 });
