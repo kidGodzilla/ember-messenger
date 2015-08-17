@@ -59,7 +59,10 @@ Or from within an instance initializer:
       const messenger = instance.container.lookup('service:messenger');
       messenger.setup({
         extraClasses: 'messenger-fixed messenger-on-top',
-        theme: 'future'
+        theme: 'future',
+        messageDefaults: {
+          showCloseButton: true
+        }
       });
     }
     
