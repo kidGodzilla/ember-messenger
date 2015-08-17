@@ -52,6 +52,25 @@ Example:
         extraClasses: 'messenger-fixed messenger-on-top messenger-on-right',
         theme: 'flat'
     });
+    
+Or from within an instance initializer:
+
+    export function initialize(instance) {
+      const messenger = instance.container.lookup('service:messenger');
+      messenger.setup({
+        extraClasses: 'messenger-fixed messenger-on-top',
+        theme: 'future',
+        messageDefaults: {
+          showCloseButton: true
+        }
+      });
+    }
+    
+    export default {
+      name: 'setup-messenger',
+      initialize: initialize
+    };
+
 
 See [http://github.hubspot.com/messenger/#messenger-object](http://github.hubspot.com/messenger/#messenger-object)
 
@@ -71,6 +90,8 @@ Advanced Example:
         showCloseButton: true
     });
 
+Note that `error()`, `info()`, and `success()` shorthand methods are available on `this.Messenger`, in keeping with
+the underlying Messenger API.
 See [http://github.hubspot.com/messenger/#messenger-object](http://github.hubspot.com/messenger/#messenger-object)
 
 #### this.Messenger.hideAll()
